@@ -11,3 +11,11 @@ services:
     environment:
       - Username:${Username}
       - password:${password}
+
+  simple_static:
+    container_name: simple_static
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 806:80
