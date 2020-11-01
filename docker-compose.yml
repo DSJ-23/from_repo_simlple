@@ -1,16 +1,16 @@
 version: '3.7'
 
 services:
-  # example:
-  #   container_name: simple_ngnix1.1
-  #   build:
-  #     context: https://${Username}:${password}@github.com/DSJ-23/simple_engine.git
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - 805:80
-  #   environment:
-  #     - Username:${Username}
-  #     - password:${password}
+  example:
+    container_name: simple_ngnix1.1
+    build:
+      context: https://${Username}:${password}@github.com/DSJ-23/simple_engine.git
+      dockerfile: Dockerfile
+    ports:
+      - 805:80
+    environment:
+      - Username:${Username}
+      - password:${password}
 
   simple_static:
     container_name: simple_static
